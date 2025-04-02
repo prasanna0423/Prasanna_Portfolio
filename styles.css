@@ -17,7 +17,15 @@ body {
     font-size:18px;
     font-family: 'Poppins', sans-serif;
 }
-
+#home {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+    padding-top: 100px; /* Add padding-top to push the content down */
+}
 header {
     background-color: #54233c;
     color: #fff;
@@ -53,7 +61,6 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #b57272;
     text-decoration: underline;
-
 }
 
 section {
@@ -65,25 +72,26 @@ section {
     padding: 0 20px;
     text-align: center;
     transition: all 0.3s ease-in-out;
-    background:linear-gradient(rgb(230, 173, 182),rgb(224, 203, 203));
-} 
+    background: linear-gradient(rgb(230, 173, 182), rgb(224, 203, 203));
+}
 
-    h1, h2 {
+h1, h2 {
     margin-bottom: 20px;
     color: #100b0a;
 }
+
 h1 {
     font-size: 2.5rem;
     font-weight: 600;
-    margin-top:20%;
+    margin-top: 20%;
 }
 
 h2 {
     font-size: 2rem;
     font-weight: 500;
-    color:#100b0a;
-    
+    color: #100b0a;
 }
+
 /* Home Section */
 #home {
     background-color: #f4f4f4;
@@ -125,16 +133,14 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .intro-image img {
     width: 250px;
     height: 250px;
     object-fit: cover;
-    border-radius:50%;
+    border-radius: 50%;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-
 }
 
 /* About Section */
@@ -146,19 +152,18 @@ h2 {
     font-size: 1.25rem;
     color: #5b2a2a;
     margin-top: 10px;
-
 }
 
 /* Skills Section */
 #skills {
     background-color: #f4f4f4;
-}
+
+} 
 
 #skills ul {
     list-style-type: none;
     font-size: 1.25rem;
     color: #6a132d;
-
 }
 
 #skills ul li {
@@ -168,22 +173,23 @@ h2 {
 /* Projects Section */
 #projects {
     background-color: #e9ecef;
+
+
 }
 
 .project {
-    margin-bottom: 21px; 
-    background:#a76285;
+    margin-bottom: 21px;
+    background: #a76285;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 500px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-} 
+}
 
 .project:hover {
-    transform: translatey(-10px);
+    transform: translateY(-10px);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -194,7 +200,7 @@ h2 {
 }
 
 .project p {
-    color:rgb(232, 209, 209);
+    color: rgb(232, 209, 209);
     font-size: 1rem;
     line-height: 1.5;
 }
@@ -207,18 +213,20 @@ h2 {
     margin-top: 10px;
     padding: 10px 20px;
     border-radius: 5px;
-    background:rgb(106, 39, 76);
+    background: rgb(106, 39, 76);
     transition: background-color 0.3s ease;
 }
 
-.project a:hover { 
-    background:linear-gradient(rgb(212, 141, 178),rgb(255, 217, 241));
-    color:black;
+.project a:hover {
+    background: linear-gradient(rgb(212, 141, 178), rgb(255, 217, 241));
+    color: black;
 }
 
 /* Contact Section */
 #contact {
     background-color: #f4f4f4;
+
+
 }
 
 form {
@@ -250,7 +258,7 @@ form textarea:focus {
 }
 
 form button {
-    background-color: #54233c; 
+    background-color: #54233c;
     color: white;
     border: none;
     cursor: pointer;
@@ -259,8 +267,8 @@ form button {
 }
 
 form button:hover {
-    background:rgb(185, 119, 130);
-    color:black;
+    background: rgb(185, 119, 130);
+    color: black;
 }
 
 /* General Link Styling */
@@ -268,5 +276,152 @@ a {
     color: inherit;
     text-decoration: none;
 }
+/* Basic styling for the header */
+header {
+    background-color: #54233c;
+    color: #fff;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(94, 90, 90, 0.1);
+}
+
+/* Styling for the navigation menu */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;  /* Center the items horizontally */
+    align-items: center;      /* Center the items vertically */
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    
+}
 
 
+/* For navigation items */
+nav ul li {
+    margin: 0;
+}
+
+/* For anchor links in the navigation */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;border-bottom: 2px solid #fff; /* Add a white line between buttons */
+    margin-bottom: 10px;
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    background-color: #b57272;
+    text-decoration: underline;
+}
+/* Media Queries for Responsiveness */
+
+/* For Tablet and Smaller Screens (up to 768px) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    #home {
+        padding-top: 140px; /* Increase padding-top for smaller screens if necessary */
+    }
+    .home-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .intro-text h1 {
+        font-size: 2rem;
+    }
+
+    .intro-text p {
+        font-size: 1rem;
+    }
+
+    .project {
+        max-width: 90%;
+    }
+
+    form {
+        width: 90%;
+    }
+    #skills{
+        padding-top: 30%;
+    }
+    #projects{
+        padding-top:35%;
+    }
+    #contact{
+        padding-top:35%;
+    }
+}
+
+/* For Mobile Screens (up to 480px) */
+@media (max-width: 480px) {
+    header {
+        padding: 10px 0;
+        justify-content: center;
+        align-items: center;
+    }
+    #home {
+        padding-top: 140px; /* Increase padding-top for smaller screens if necessary */
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .home-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .intro-text p {
+        font-size: 0.9rem;
+    }
+
+    .intro-image img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .project {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    form input,
+    form textarea,
+    form button {
+        padding: 12px;
+        font-size: 14px;
+    }
+    
+    #skills{
+        padding-top: 30%;
+    }
+    #projects{
+        padding-top:50%;
+    }
+    #contact{
+        padding-top:50%;
+    }
+}

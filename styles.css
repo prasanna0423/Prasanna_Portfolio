@@ -1,0 +1,272 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;    
+}
+
+body {
+    line-height: 1.6;
+    color:#8e4b4b;
+    background-color:#333;
+    font-size:18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #54233c;
+    color: #fff;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(94, 90, 90, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #b57272;
+    text-decoration: underline;
+
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    background:linear-gradient(rgb(230, 173, 182),rgb(224, 203, 203));
+} 
+
+    h1, h2 {
+    margin-bottom: 20px;
+    color: #100b0a;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top:20%;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    color:#100b0a;
+    
+}
+/* Home Section */
+#home {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+}
+
+.home-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;  /* Limits the width */
+    width: 100%;
+}
+
+.intro-text {
+    flex: 1;
+    text-align: left;
+}
+
+.intro-text h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.intro-text p {
+    font-size: 1.25rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.intro-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.intro-image img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius:50%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+
+}
+
+/* About Section */
+#about {
+    background-color: #e9ecef;
+}
+
+#about p {
+    font-size: 1.25rem;
+    color: #5b2a2a;
+    margin-top: 10px;
+
+}
+
+/* Skills Section */
+#skills {
+    background-color: #f4f4f4;
+}
+
+#skills ul {
+    list-style-type: none;
+    font-size: 1.25rem;
+    color: #6a132d;
+
+}
+
+#skills ul li {
+    margin-bottom: 10px;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #e9ecef;
+}
+
+.project {
+    margin-bottom: 20px;
+    background:#a76285;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+} 
+
+.project:hover {
+    transform: translatey(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.project p {
+    color:rgb(232, 209, 209);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.project a {
+    color: #e8dbdb;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background:rgb(106, 39, 76);
+    transition: background-color 0.3s ease;
+}
+
+.project a:hover { 
+    background:linear-gradient(rgb(212, 141, 178),rgb(255, 217, 241));
+    color:black;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #f4f4f4;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #fff;
+    transition: border 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #333;
+    outline: none;
+}
+
+form button {
+    background-color: #54233c; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+form button:hover {
+    background:rgb(185, 119, 130);
+    color:black;
+}
+
+/* General Link Styling */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+

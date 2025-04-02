@@ -17,6 +17,17 @@ body {
     font-size:18px;
     font-family: 'Poppins', sans-serif;
 }
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #5a2d41; /* Match your theme */
+    color: white;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 #home {
     background-color: #f4f4f4;
     display: flex;
@@ -83,7 +94,7 @@ h1, h2 {
 h1 {
     font-size: 2.5rem;
     font-weight: 600;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 h2 {
@@ -327,12 +338,15 @@ nav ul li a:hover {
 
 /* For Tablet and Smaller Screens (up to 768px) */
 @media (max-width: 768px) {
+    h1{
+        font-size: 1.5rem;
+        }
     nav ul {
         flex-direction: column;
         gap: 15px;
     }
     #home {
-        padding-top: 140px; /* Increase padding-top for smaller screens if necessary */
+        padding-top: 30%; /* Increase padding-top for smaller screens if necessary */
     }
     .home-content {
         flex-direction: column;
@@ -343,7 +357,6 @@ nav ul li a:hover {
         width: 200px;
         height: 200px;
     }
-
     .intro-text h1 {
         font-size: 2rem;
     }
@@ -372,13 +385,16 @@ nav ul li a:hover {
 
 /* For Mobile Screens (up to 480px) */
 @media (max-width: 480px) {
+    h1{
+    font-size: 1.5rem;
+    }
     header {
         padding: 10px 0;
         justify-content: center;
         align-items: center;
     }
     #home {
-        padding-top: 140px; /* Increase padding-top for smaller screens if necessary */
+        padding-top: 180px; /* Increase padding-top for smaller screens if necessary */
     }
     nav ul {
         flex-direction: column;
@@ -391,7 +407,7 @@ nav ul li a:hover {
     }
 
     .intro-text h1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .intro-text p {
@@ -423,5 +439,16 @@ nav ul li a:hover {
     }
     #contact{
         padding-top:50%;
+    }
+    footer {
+        text-align: center;
+        padding: 15px;
+        background-color: #5a2d41; /* Match your theme */
+        color: white;
+        font-size: 8px;
+        position: fixed;
+        bottom: 0;
+        height: 50px;
+        width: 100%;
     }
 }
